@@ -1,11 +1,11 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
-  <h1>Welcome to {{ title }}!</h1>
+  <h1>Welcome from {{ title }}!</h1>
 
-  list of players:
+  list:
 
   <div>
-    <div *ngFor="let item of items">{{item  |{{ object | json }}}}</div>
+    <div *ngFor="let item of players.lists">{{ item.name  }}</div>
   </div>
 </div>
 

@@ -7,9 +7,10 @@ import {HttpClient} from '@angular/common/http';
 })
 export class MyServiceService {
 
-  constructor(private http:HttpClient) { }
+  constructor(private http: HttpClient) { }
 
-  getData():Observable<any[]>{
-    return this.http.get<any[]>('http://localhost:3000/getplayers')
+  getPlayers(): Observable<any[]> {
+    debugger
+    return this.http.get<any[]>('http://localhost:3000/players');
   }
 }
